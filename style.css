@@ -1,0 +1,32 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --nav-bg: #f4f4f4;
+    --primary-color: #0056b3;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --nav-bg: #1e1e1e;
+}
+
+body {
+    margin: 0;
+    font-family: Ariel, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--nav-bg);
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; }
+.nav-links { display: flex; list-style: none; gap: 2rem; padding: 0; }
+.nav-links a { text-decoration: none; color: var(--text-color); font-weight: bold; }
+#theme-toggle { padding: 0.5rem 1rem; cursor: pointer; }
