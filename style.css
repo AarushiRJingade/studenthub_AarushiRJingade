@@ -30,3 +30,22 @@ body {
 .nav-links { display: flex; list-style: none; gap: 2rem; padding: 0; }
 .nav-links a { text-decoration: none; color: var(--text-color); font-weight: bold; }
 #theme-toggle { padding: 0.5rem 1rem; cursor: pointer; }
+
+.hero { text-align: center; padding: 5rem 2rem; }
+.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+.cta-button {
+    padding: 0.75rem 1.5rem; font-size: 1.1rem;
+    background-color: var(--primary-color); color: white;
+    border: none; border-radius: 5px; cursor: pointer; margin-top: 1rem;
+}
+
+.features-section { padding: 3rem 5%; text-align: center; }
+.grid-container {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--nav-bg); padding: 2rem;
+    border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
